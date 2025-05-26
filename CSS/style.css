@@ -304,6 +304,8 @@ nav>ul>li>a:hover {
     .reseñas-container {
         flex-wrap: wrap;
         gap: 0.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
     .reseñas-card {
         min-width: 180px;
@@ -313,8 +315,8 @@ nav>ul>li>a:hover {
 }
 @media (max-width: 500px) {
     .reseñas-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
     .reseñas-card {
         width: 95vw;
